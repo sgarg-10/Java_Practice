@@ -1,1 +1,1 @@
-This will contian all the codes I practice in JAVA language.
+This will contain all the codes I practice in JAVA language.
