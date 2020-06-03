@@ -1,0 +1,65 @@
+#include <stdio.h>
+
+int main(){
+    
+int N,C[i],L[i];
+printf("ENTER THE NO OF CHECKPOINTS");
+scanf("%d",&N);
+printf("enter the cost of petrol per litre at each checkpoint");
+for(int i;i<100;i++)
+{
+    scanf("%d",&C[i]);
+}
+printf("enter litre required");
+for(int i;i<100;i++)
+{
+    scanf("%d",&L[i]);
+}
+int cost=0;
+int temp,C1[];
+for(int i;i<100;i++)
+{
+     C1[i]=C[i];
+}
+
+cost=cost+C[0];
+for(i=0;i<100-1;i++)
+{
+    for(j=0;j<100-i-1;j++)
+    {
+        temp=C1[i];
+        C1[i]=C1[i+1];
+        C1[i+1]=temp;
+    }
+}
+for(i=0;i<n;i++)
+{
+    if(C1[0]==C[i])
+    int least=i;
+    break;
+    else continue;
+    }
+    if(least==0)
+    {
+    for(i=least;i<N;i++)
+    {
+        cost=cost+L[i];
+    }
+    }
+    else 
+    {
+        int remain=N-least;
+    void sorting()
+    {
+        for(i=0;i<i<least-1;i++)
+{
+    for(j=0;j<least-i-1;j++)
+    {
+        temp=C1[i];
+        C1[i]=C1[i+1];
+        C1[i+1]=temp;
+    }
+}
+        
+    }
+}
