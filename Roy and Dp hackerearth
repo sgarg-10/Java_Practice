@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main(){
+    int L,W[10000],H[10000],N;
+    scanf("%d",&L);
+    printf("\n");
+    scanf("%d",&N);
+     printf("\n");
+    for(int i=0;i<=N;i++)
+    {
+        scanf("%d %d", &W[i],&H[i]);
+         printf("\n");
+    }
+    for(int i=0;i<N;i++)
+    {
+        if(W[i]<L || H[i]<L)
+        {
+        printf("UPLOAD ANOTHER");
+        printf("\n");
+        }
+        else if(W[i]==H[i])
+        {
+            printf("ACCEPTED");
+        printf("\n");
+        }
+        else
+        {
+        printf("CROP IT");
+        printf("\n");
+        }
+    }
+    
+}
