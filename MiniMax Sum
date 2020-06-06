@@ -1,0 +1,25 @@
+// Complete the miniMaxSum function below.
+void miniMaxSum(vector<int> arr) {
+    for(int i=0;i<5;i++)
+    {
+        for(int j=0;j<4-i;j++)
+        {
+        if (arr[j]>arr[j+1])
+        {
+        int temp=arr[j];
+        arr[j]=arr[j+1];
+        arr[j+1]=temp;
+        }
+        else continue;
+        }
+    }
+    unsigned long long min;
+    unsigned long long max;
+    
+        
+        min=arr[0]+arr[1]+arr[2]+arr[3];
+        max=arr[1]+arr[2]+arr[3]+arr[4];
+        cout<<min<<"\t"<<max;
+
+    
+}
